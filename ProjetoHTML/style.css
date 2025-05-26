@@ -1,0 +1,52 @@
+h1{
+    font-family: fantasy;
+    font-size: 70px;  
+}
+
+body{
+    /*background-image: url('Imagens/background2.png'); Insere foto no background da pagina*/
+    background-size: cover; /*Faz a foto tomar a página por completo*/
+    background-repeat: no-repeat; /*Impede que a imagem se repita várias vezes*/
+    background-color:#EBCFB2;
+}
+/*Refere-se ao botão de "enviar" da página*/
+
+#enviar {
+    background-color: #5A67D8; /*Cor do fundo*/
+    color: white; /*Cor da letra*/
+    padding: 10px 20px; /*Margem interna do botão*/
+    border: none; /*Retira a borda*/ 
+    border-radius: 6px;
+    cursor: pointer; /*Faz aparecer uma mãozinha quando passa o mouse por cima do botão*/
+}
+#enviar:hover {
+    background-color: #434190; /*Faz a cor do botão mudar quando o mouse passar por cima dele*/
+}
+
+
+#presencial {
+    cursor: pointer;
+}
+
+#online{
+    cursor: pointer;
+}
+
+#termo{
+    cursor: pointer;
+}
+
+#nome{
+    border:none;
+    border-radius: 6px;
+}
+
+#email{
+    border: none;
+    border-radius: 6px;
+}
+
+#p{
+    background-color: beige;
+}
+

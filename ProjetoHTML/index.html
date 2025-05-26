@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFuture Summit</title>
+</head>
+<body>
+    <header>
+    <h1 style="text-align:center">TechFuture Summit</h1> <!--Cabeçalho-->
+    <link rel="stylesheet" href="style.css">
+    </header>
+
+    <h2 style="text-align:left">Sobre o evento</h2> <!--Resumo sobre o evento-->
+    <p>O TechFuture Summit, realizado pela TechConnect, é o lugar ideal para desenvolvedores e designers
+         que querem se conectar com as principais tendências do mercado, trocar experiências e se inspirar 
+         com palestras incríveis de especialistas renomados.
+        Venha fazer parte desse evento único e leve suas ideias ainda mais longe!</p>
+
+    <h2 style="text-align: left;">Quando acontece?</h2>
+    <p>Dia 29 de Março de 2025, não perca!</p> <br>
+    <img src="Imagens/savethedate.png" alt="Save The Date" width="300" height="250">
+
+    <h2>Nossos palestrantes</h2>
+    <h3>Nina Takahashi</h3>
+    <img src="Imagens/Nina.png" alt="Nina" width="300" height="250">
+    <p><strong>Designer UX com foco em Experiência Inclusiva</strong></p> <!--Mini biografia da palestrante-->
+    <p>Nina é uma jovem designer de experiência do usuário (UX) que tem se destacado pela forma como une empatia e tecnologia. 
+        Ela adora entender como as pessoas interagem com os sistemas e transformar isso em soluções práticas e bonitas. 
+        Mesmo tão nova, Nina já participou de hackathons internacionais e atualmente integra uma equipe de design que desenvolve 
+        aplicativos voltados para educação. </p>
+
+    <h3>Carlos Silva</h3>
+    <img src="Imagens/Carlos.png" alt="Carlos" width="300" height="250">
+    <p><strong>Desenvolvedor Full-Stack e Mentor de Novos Talentos</strong></p> <!--Mini biografia do palestrante-->
+    <p>Carlos é desenvolvedor full-stack e apaixonado por tecnologia desde a infância. Sua jornada começou criando jogos por 
+    conta própria e, atualmente, ele se dedica ao desenvolvimento de soluções web completas. Além disso, atua como mentor de 
+    jovens, incentivando o uso da tecnologia como ferramenta de transformação social.</p>
+
+    <h3>Beatriz Santos</h3>
+    <img src="Imagens/Beatriz.png" alt="Beatriz" width="300" height="250">
+    <p><strong>Desenvolvedora Front End especialista em Acessibilidade</strong></p><!--Mini biografia do palestrante-->
+    <p>Beatriz é uma desenvolvedora front-end apaixonada por criar interfaces lindas e funcionais. Ela começou sua carreira em 
+        tecnologia ainda na adolescência e já participou de projetos premiados com foco em acessibilidade e inclusão digital.
+         Hoje, além de trabalhar em uma startup de inovação, Luana também compartilha dicas e tutoriais nas redes sociais para 
+         quem está começando na programação.</p>
+
+    <h2>Participe!</h2> <!--Campo de registro-->
+    <form>
+    <fieldset>
+        <legend>Registro</legend> <!--Título do formulário-->
+
+        <label for="nome">Nome completo</label><!--Dados do participante-->
+        <input type="text" name="nome" id="nome" maxlength="60" required aria-required="true"> 
+        <!--"Required" torna obrigatório a seleção, já o "aria-required" indica aos leitores de tela que a seleção é obrigatória. 
+         ATRIBUTO DE ACESSIBILIDADE-->
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" maxlength="50" required aria-required="true"><br>
+
+        <h4>Tipo de Ingresso</h4> <!--Tipo do ingresso, se vai ser presencial ou online-->
+        <label for="Presencial">Presencial</label>
+        <input type="radio" name="opcao" id="presencial" required aria-required="true">
+        <label for="Online">Online</label>
+        <input type="radio" name="opcao" id="online">
+
+        <h4>Termos de Serviço</h4> <!--Termos de serviço-->
+        <input type="checkbox" name="termo" id="termo" required aria-required="true">
+        <label for="termo">Declaro que li e concordo com o uso das informações fornecidas neste formulário para fins relacionados
+         à prestação do serviço, conforme a política de privacidade.</label><br>
+
+         <input type="submit" name="enviar" id="enviar"> <!--Lembra de colocar uma mensagem quando o usuario se registrar: 
+          onclick="alert('Registrado com sucesso!')-->
+
+    </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
