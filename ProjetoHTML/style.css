@@ -16,7 +16,7 @@ body{
     color: white; /*Cor da letra*/
     padding: 10px 20px; /*Margem interna do botão*/
     border: none; /*Retira a borda*/ 
-    border-radius: 6px;
+    border-radius: 6px; /*Arredonda as bordas*/
     cursor: pointer; /*Faz aparecer uma mãozinha quando passa o mouse por cima do botão*/
 }
 #enviar:hover {
@@ -50,3 +50,6 @@ body{
     background-color: beige;
 }
 
+.arredondarborda{
+    border-radius: 16px;
+}
