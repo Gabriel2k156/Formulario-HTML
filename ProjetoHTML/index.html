@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFuture Summit</title>
+    <link rel="stylesheet" href="style.css"> <!--Adição do arquivo de CSS no HTML-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> <!--Fonte Poppins-->
 </head>
-<body>
+
+<body> 
+    <div class="corpo">
     <header>
-    <h1 style="text-align:center">TechFuture Summit</h1> <!--Cabeçalho-->
-    <link rel="stylesheet" href="style.css">
-    </header>
-
-    <h2 style="text-align:left">Sobre o evento</h2> <!--Resumo sobre o evento-->
-    <p>O TechFuture Summit, realizado pela TechConnect, é o lugar ideal para desenvolvedores e designers
-         que querem se conectar com as principais tendências do mercado, trocar experiências e se inspirar 
-         com palestras incríveis de especialistas renomados.
-        Venha fazer parte desse evento único e leve suas ideias ainda mais longe!</p>
-
-    <h2 style="text-align: left;">Quando acontece?</h2>
+    <h1>TechFuture Summit</h1><!--Cabeçalho-->
+    </header>   
+    
+    <h2 style="text-align:center">O QUE SERÁ ABORDADO?</h2> <!--Resumo sobre o evento-->
+    
+    <p>O TechFuture Summit conecta desenvolvedores e designers às principais tendências que estão moldando o futuro da tecnologia e do design.
+        Você vai acompanhar palestras com especialistas renomados, descobrir inovações do mercado, trocar experiências com outros profissionais e ampliar sua visão com conteúdos inspiradores.
+        Organizado pela TechConnect, é o espaço ideal para aprender, se conectar e levar a sua carreira para o próximo nível!</p>
+       
+    <h2>Quando acontece?</h2>
     <p>Dia 29 de Março de 2025, não perca!</p> <br>
+    
     <img class="foto" src="Imagens/savethedate.png" alt="Save The Date" width="300" height="250">
+    
 
     <h2 id="nossospalestrantes">Conheça nossos palestrantes</h2><br>
 
     
     <div class="movercaixa";> <!--Todos os elementos dos div estão enquadrados na classe movercaixa-->
-             <div class="caixa" >
+             <div class="caixa">
               <img id="nina" class="foto" src="Imagens/Nina.png" alt="Nina" width="300" height="250">
                 <div>
                     <h3>Nina Takahashi</h3>
-                    <p><strong>Designer Profissional</strong></p> <!--Mini biografia da palestrante-->
-                    <p style="color: black;">Nina é uma jovem designer de experiência do usuário 
+                    <p><strong>Designer Profissional focada em UX</strong></p> <!--Mini biografia da palestrante-->
+                    <p>Nina é uma jovem designer de experiência do usuário 
                     (UX) que tem se destacado pela forma como une empatia e tecnologia. 
                     Ela adora entender como as pessoas interagem com os sistemas e transformar isso em soluções práticas e bonitas.</p>
                 </div>
@@ -40,9 +45,9 @@
          <div class="caixa">
              <img id="carlos" class="foto" src="Imagens/Carlos.png" alt="Carlos" width="300" height="250">
                 <div>
-                     <h3>Carlos Silva</h3>
-                     <p><strong>Desenvolvedor Full-Stack e Mentor de Novos Talentos</strong></p> <!--Mini biografia do palestrante-->
-                     <p >Carlos é desenvolvedor full-stack e apaixonado por tecnologia desde a infância. Sua jornada começou criando 
+                     <h3 class="textocard">Carlos Silva</h3>
+                     <p class="textocard"><strong>Desenvolvedor Full-Stack e Mentor de Novos Talentos</strong></p> <!--Mini biografia do palestrante-->
+                     <p class="tex">Carlos é desenvolvedor full-stack e apaixonado por tecnologia desde a infância. Sua jornada começou criando 
                         jogos por conta própria e, atualmente, ele se dedica ao desenvolvimento de soluções web completas. Além disso, atua como mentor de 
                      jovens, incentivando o uso da tecnologia como ferramenta de transformação social.</p>
                 </div>      
@@ -62,8 +67,12 @@
    </div> 
 
     <h2 style="text-align: left;">Participe!</h2> <!--Campo de registro-->
-    <form>
-    <fieldset>
+   
+    
+    <form id="registro">  <!--Formulario-->
+
+    <fieldset> 
+        
         <legend>Registro</legend> <!--Título do formulário-->
 
         <label for="nome">Nome completo</label><!--Dados do participante-->
@@ -75,23 +84,22 @@
 
         <h4>Tipo de Ingresso</h4> <!--Tipo do ingresso, se vai ser presencial ou online-->
         <label for="Presencial">Presencial</label>
-        <input type="radio" name="opcao" id="presencial" required aria-required="true">
+        <input type="radio" name="opcao" class="mudarcursor" required aria-required="true">
         <label for="Online">Online</label>
-        <input type="radio" name="opcao" id="online">
+        <input type="radio" name="opcao" class="mudarcursor">
 
         <h4>Termos de Serviço</h4> <!--Termos de serviço-->
-        <input type="checkbox" name="termo" id="termo" required aria-required="true">
+        <input type="checkbox" name="termo" class="mudarcursor" required aria-required="true">
         <label for="termo">Declaro que li e concordo com o uso das informações fornecidas neste formulário para fins relacionados
          à prestação do serviço, conforme a política de privacidade.</label><br>
 
          <input type="submit" name="enviar" id="enviar"> <!--Lembra de colocar uma mensagem quando o usuario se registrar: 
           onclick="alert('Registrado com sucesso!')-->
-
+    
+              
     </fieldset>
     </form>
-
-
-
+</div>
 
 
 
