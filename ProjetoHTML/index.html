@@ -22,9 +22,12 @@
        
     <h2>Quando e onde acontece?</h2>
     <p>Acontece dia 29 de Maio na Avenida Luís Viana Filho nº 6775, Paralela, não perca!</p> <br>
-    
-    <img class="foto" src="Imagens/savethedate.png" alt="Save The Date" width="300" height="250">
-    
+
+    <div class="conteiner">
+        <div>
+            <img class="foto" id="centralizarfoto" src="Imagens/savethedate.png" alt="Save The Date" width="300" height="250">
+        </div> 
+    </div> 
 
     <h2 id="nossospalestrantes">Conheça nossos palestrantes</h2><br>
 
@@ -76,15 +79,15 @@
         <legend>Registro</legend> <!--Título do formulário-->
 
         <label for="nome">Nome completo</label><!--Dados do participante-->
-        <input type="text" name="nome" id="nome" maxlength="60" required aria-required="true"> 
+        <input type="text" name="nome" maxlength="60" class="arredondarcaixa" required aria-required="true"> 
         <!--"Required" torna obrigatório a seleção, já o "aria-required" indica aos leitores de tela que a seleção é obrigatória. 
          ATRIBUTO DE ACESSIBILIDADE-->
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" maxlength="50" required aria-required="true"><br>
+        <input type="email" name="email" class="arredondarcaixa" maxlength="50" required aria-required="true"><br>
 
         <h4>Tipo de Ingresso</h4> <!--Tipo do ingresso, se vai ser presencial ou online-->
         <label for="Presencial">Presencial</label>
-        <input type="radio" name="opcao" class="mudarcursor" required aria-required="true">
+        <input type="radio" name="opcao" class="mudarcursor"; required aria-required="true">
         <label for="Online">Online</label>
         <input type="radio" name="opcao" class="mudarcursor">
 
@@ -95,16 +98,9 @@
 
          <input type="submit" name="enviar" id="enviar"> <!--Lembra de colocar uma mensagem quando o usuario se registrar: 
           onclick="alert('Registrado com sucesso!')-->
-    
-              
+                 
     </fieldset>
     </form>
-</div>
-
-
-
-
-
-
+    </div>
 </body>
 </html>
