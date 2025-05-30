@@ -14,14 +14,11 @@ h2{
     text-align: center;
 }
 
-
 body{
-    background-color:#D6E4FF;
-   
+    background-color:#D6E4FF;  
     margin: 0;
-   padding: 0;
+    padding: 0;
 }
-
 
 #enviar { /*Refere-se ao botão de "enviar" da página*/
     background-color: #5A67D8; /*Cor do fundo*/
@@ -31,24 +28,18 @@ body{
     border-radius: 6px; /*Arredonda a borda*/
     cursor: pointer; /*Faz aparecer uma mãozinha quando passa o mouse por cima do botão*/
 }
+
 #enviar:hover {
     background-color: #434190; /*Faz a cor do botão mudar quando o mouse passar por cima dele*/
 }
-/*------------------------------------------------------------------------------------------------------------*/
 
-
-/*--------------------------------------------------------------------------------------------------------------*/
-
-#presencial {
+.mudarcursor{
     cursor: pointer;
 }
 
-#online{
-    cursor: pointer;
-}
-
-#termo{
-    cursor: pointer;
+.arredondarcaixa{
+    border: none;
+    border-radius: 6px;
 }
 
 #nome{
@@ -69,7 +60,6 @@ body{
     border-radius: 16px;                
 }
 
-
 .caixa{ /*Isso mexe no que está DENTRO da caixa, precisa criar uma div dentro da outra para mover ela por completo*/
     width: 500px; /* Largura */
     height: auto; /* Altura*/
@@ -81,18 +71,14 @@ body{
     min-height: 470px;     
 }
 
-
 .movercaixa{    /*Move o que está FORA da caixa, é o que fica na <div> de fora, vai centralizar a borda da caixa, basicamente*/  
     display: flex;
     justify-content: center;    
     align-items: center;  
     position: relative;
     gap: 20px; /*Espaço entre as caixas*/
-    flex-wrap: wrap; /*Serve pra ajustar os elementos de acordo com o tamanho da tela, RESPONSIVIDADE*/
-    
-    
+    flex-wrap: wrap; /*Serve pra ajustar os elementos de acordo com o tamanho do conteiner/tela. RESPONSIVIDADE*/    
 }
-
 
 #nossospalestrantes{
     text-align: center;
@@ -122,6 +108,9 @@ header{
     background-size: cover;
 }
 
-#savethedate{
-    text-align: center;
+.conteiner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
